@@ -1,6 +1,9 @@
 import { useEffect, useRef } from 'react';
 
-const processGalleryAsset = (file) => `${import.meta.env.BASE_URL || '/'}process-gallery/${file}`;
+const processGalleryAsset = (file) => {
+  const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
+  return `${base}/process-gallery/${file}`;
+};
 
 const galleryImages = [
   {
