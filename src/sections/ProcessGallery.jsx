@@ -1,59 +1,54 @@
 import { useEffect, useRef } from 'react';
 
+const processGalleryAsset = (file) => `${import.meta.env.BASE_URL || '/'}process-gallery/${file}`;
+
 const galleryImages = [
   {
-    src: '/process-gallery/dolce.mov',
-    poster: '/process-gallery/process-01.webp',
+    src: processGalleryAsset('dolce.mov'),
+    poster: processGalleryAsset('process-01.webp'),
     alt: 'Dolce prototype walkthrough',
     type: 'video',
     aspect: '1 / 2',
   },
   {
-    src: '/process-gallery/cinedept2.mov',
-    poster: '/process-gallery/process-02.webp',
+    src: processGalleryAsset('cinedept2.mov'),
+    poster: processGalleryAsset('process-02.webp'),
     alt: 'CineDept prototype walkthrough',
     type: 'video',
     aspect: '1 / 2',
   },
   {
-    src: '/process-gallery/rabbit.mov',
-    poster: '/process-gallery/process-03.webp',
+    src: processGalleryAsset('rabbit.mov'),
+    poster: processGalleryAsset('process-03.webp'),
     alt: 'Rabbit prototype walkthrough',
     type: 'video',
     aspect: '1 / 2',
   },
   {
-    src: '/process-gallery/poly.mov',
-    poster: '/process-gallery/process-04.webp',
+    src: processGalleryAsset('poly.mov'),
+    poster: processGalleryAsset('process-04.webp'),
     alt: 'Poly prototype walkthrough',
     type: 'video',
     aspect: '1 / 2',
   },
   {
-    src: '/process-gallery/analogue.mov',
-    poster: '/process-gallery/process-05.webp',
+    src: processGalleryAsset('analogue.mov'),
+    poster: processGalleryAsset('process-05.webp'),
     alt: 'Analogue prototype walkthrough',
     type: 'video',
     aspect: '1 / 2',
   },
   {
-    src: '/process-gallery/ets.mov',
-    poster: '/process-gallery/process-06.webp',
+    src: processGalleryAsset('ets.mov'),
+    poster: processGalleryAsset('process-06.webp'),
     alt: 'ETS prototype walkthrough',
     type: 'video',
     aspect: '1 / 2',
   },
   {
-    src: '/process-gallery/obsession.mov',
-    poster: '/process-gallery/process-07.webp',
+    src: processGalleryAsset('obsession.mov'),
+    poster: processGalleryAsset('process-07.webp'),
     alt: 'Obsession prototype walkthrough',
-    type: 'video',
-    aspect: '1 / 2',
-  },
-  {
-    src: '/process-gallery/schibler.mov',
-    poster: '/process-gallery/process-08.webp',
-    alt: 'Schibler prototype walkthrough',
     type: 'video',
     aspect: '1 / 2',
   },
@@ -87,7 +82,7 @@ const ProcessGallery = ({ content }) => {
 
   useEffect(() => {
     const track = gridRef.current;
-    if (!track || typeof window === 'undefined' || !('IntersectionObserver' in window)) return undefined;
+    if (!track || typeof window === 'undefined') return undefined;
 
     const videos = Array.from(track.querySelectorAll('video'));
     if (!videos.length) return undefined;
@@ -95,27 +90,32 @@ const ProcessGallery = ({ content }) => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          const videoEl = entry.target;
-          if (entry.isIntersecting && entry.intersectionRatio >= 0.6) {
-            videoEl.play().catch(() => {});
+          const video = entry.target;
+          const isCentered = entry.intersectionRatio >= 0.6;
+
+          if (isCentered) {
+            video.play().catch(() => {});
           } else {
-            videoEl.pause();
+            video.pause();
           }
         });
       },
-      { threshold: [0.6] }
+      {
+        threshold: [0, 0.25, 0.5, 0.6, 0.75, 1],
+        rootMargin: '-20% 0px -20% 0px',
+      }
     );
 
     videos.forEach((video) => {
-      video.pause();
+      video.preload = 'none';
       observer.observe(video);
     });
 
     return () => {
-      videos.forEach((video) => observer.unobserve(video));
       observer.disconnect();
+      videos.forEach((video) => video.pause());
     };
-  }, [galleryImages.length]);
+  }, []);
 
   return (
     <section className="section process-gallery-section" id="process-gallery">
@@ -143,7 +143,7 @@ const ProcessGallery = ({ content }) => {
                     loop
                     playsInline
                     controls={false}
-                    preload="metadata"
+                    preload="none"
                   />
                 ) : (
                   <img
