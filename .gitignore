@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.DS_Store
+
+# Large media
+public/process-gallery/*.mov
+process-gallery/
+src/lib/reflect-desktop.mov
+hero-video.mp4
+Creatinghomes-proto.mov
+public/process-gallery/*.mov

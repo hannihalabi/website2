@@ -1,0 +1,122 @@
+{
+  "nav": {
+    "product": "Product",
+    "ai": "AI",
+    "pricing": "Pricing",
+    "company": "Company",
+    "blog": "Blog"
+  },
+  "header": {
+    "login": "Login",
+    "startTrial": "Start trial"
+  },
+  "hero": {
+    "kicker": "WELCOME TO ATALANTALABS",
+    "titleStatic": "Next generation",
+    "rotating": [
+      "Brand awareness",
+      "Premium websites",
+      "SEO"
+    ],
+    "subtitle": "From idea to launch, we craft standout web experiences that grow your brand awareness and keep you ahead of competitors.",
+    "ctas": {
+      "primary": "Start free trial",
+      "secondary": "See the product"
+    },
+    "stats": [
+      {
+        "label": "Native AI",
+        "value": "Summaries, answers, and writing help built in."
+      },
+      {
+        "label": "Instant search",
+        "value": "Find ideas, backlinks, and tasks in milliseconds."
+      },
+      {
+        "label": "Private by default",
+        "value": "Local-first with synced, encrypted graph."
+      }
+    ]
+  },
+  "processGallery": {
+    "kicker": "Process gallery",
+    "title": "Dominate your sector",
+    "description": "Chosen by businesses around the world – so you can stay ahead of your competitors",
+    "cta": "Show all images",
+    "closeLabel": "Close image"
+  },
+  "features": {
+    "title": "Organized by default. Calm by design.",
+    "blurb": "Build a personal website experience and create a flow that feels natural to navigate",
+    "blocks": [
+      {
+        "title": "SEO advantage",
+        "description": "Create a website that is optimized against your competitors when they search for help.",
+        "points": [
+          "Keyword and structure tailored to outrank rivals",
+          "Fast, mobile-first pages that convert",
+          "Analytics-ready so you can keep improving"
+        ]
+      },
+      {
+        "title": "Comfort and trust",
+        "description": "A website that makes users feel comfortable and builds you into a trustworthy brand.",
+        "points": [
+          "Calm, reassuring visuals and messaging",
+          "Clear pathways to support and action",
+          "Mobile and desktop experiences that feel consistent"
+        ]
+      }
+    ]
+  },
+  "showcase": {
+    "label": "Product",
+    "title": "Stunning brand awareness",
+    "description": "From an idea to a structured plan we will create a stunning brand awareness for you",
+    "bullets": []
+  },
+  "ai": {
+    "label": "Work smarter",
+    "title": "Implementing AI in your toolbox",
+    "description": "Reflect ships with native AI that understands your graph. Summarize notes, ask questions, or generate outlines without switching tools.",
+    "bullets": [
+      "Ask natural questions about your notes.",
+      "Summaries, reframes, and rewrite suggestions on the fly.",
+      "Privacy-first: your data stays yours."
+    ]
+  },
+  "pricing": {
+    "title": "Simple pricing for focused teams and individuals.",
+    "blurb": "Try everything free for 14 days. Cancel anytime, export anytime.",
+    "price": "$10",
+    "period": "per month",
+    "features": [
+      "Unlimited notes, links, and uploads",
+      "Native AI assistance included",
+      "Daily notes and graph view",
+      "Secure sync across devices",
+      "Publish and share pages",
+      "Performance dashboard"
+    ],
+    "cta": "Start free trial",
+    "secondaryCta": "Book a demo"
+  },
+  "footer": {
+    "product": "Product",
+    "company": "Company",
+    "resources": "Resources",
+    "links": {
+      "features": "Features",
+      "ai": "AI",
+      "pricing": "Pricing",
+      "downloads": "Downloads",
+      "blog": "Blog",
+      "changelog": "Changelog",
+      "careers": "Careers",
+      "contact": "Contact",
+      "docs": "Documentation",
+      "roadmap": "Roadmap",
+      "values": "Our values"
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "nav": {
+    "product": "Produkt",
+    "ai": "AI",
+    "pricing": "Priser",
+    "company": "Företag",
+    "blog": "Blogg"
+  },
+  "header": {
+    "login": "Logga in",
+    "startTrial": "Starta prov"
+  },
+  "hero": {
+    "kicker": "AI Powered",
+    "titleStatic": "Nästa generation",
+    "rotating": [
+      "Webbdesign",
+      "Artificiell intelligens",
+      "SEO"
+    ],
+    "subtitle": "Fånga allt, länka idéer utan friktion och låt inbyggd AI hålla dig organiserad utan att störa flödet.",
+    "ctas": {
+      "primary": "Starta gratis provperiod",
+      "secondary": "Se produkten"
+    },
+    "stats": [
+      {
+        "label": "Inbyggd AI",
+        "value": "Sammanfattningar, svar och skrivhjälp är inbyggt."
+      },
+      {
+        "label": "Direktsök",
+        "value": "Hitta idéer, bakåtlänkar och uppgifter på millisekunder."
+      },
+      {
+        "label": "Privat som standard",
+        "value": "Lokal först med synkad, krypterad graf."
+      }
+    ]
+  },
+  "processGallery": {
+    "kicker": "Processgalleri",
+    "title": "Se processen i bilder.",
+    "description": "Ett axplock från uppdrag där vi guidat kunden hela vägen från konsultation till färdigt rum.",
+    "cta": "Visa alla bilder",
+    "closeLabel": "Stäng bild"
+  },
+  "features": {
+    "title": "Organiserat som standard. Lugnt i designen.",
+    "blurb": "Bygg en personlig kunskapsbas som känns naturlig att navigera. Reflect håller anteckningar, länkar och uppgifter i ett lugnt arbetsflöde.",
+    "blocks": [
+      {
+        "title": "Länkade tankar",
+        "description": "Bakåtlänkar och grafvy håller dina idéer ihop automatiskt så du kan hoppa mellan relaterade anteckningar utan friktion.",
+        "points": [
+          "Dagliga anteckningar med ett klick",
+          "Bakåtlänkar skapas automatiskt",
+          "Grafvy för snabb kontext"
+        ]
+      },
+      {
+        "title": "Fånga allt",
+        "description": "Lägg till text, bilder, uppgifter och highlights. Allt är sökbart och synkat direkt på alla enheter.",
+        "points": [
+          "Tangentbordsdrivna kommandon",
+          "Snabba filter och sök",
+          "Mobil- och desktopappar"
+        ]
+      },
+      {
+        "title": "Redo för team",
+        "description": "Dela dokument, publicera sidor och håll alla synkade utan att tappa fokus och lugn.",
+        "points": [
+          "Bjud in kollegor",
+          "Kommentarer och omnämnanden",
+          "Delningsbara sidor med en länk"
+        ]
+      }
+    ]
+  },
+  "showcase": {
+    "label": "Produkt",
+    "title": "Allt du behöver för att hålla flödet.",
+    "description": "Från första idén till strukturerad research håller Reflect anteckningar, highlights och uppgifter ihop i ett lugnt arbetsflöde.",
+    "bullets": [
+      "Fånga idéer med tangentbordsfart.",
+      "Se bakåtlänkar och grafkopplingar direkt.",
+      "Behåll mötesanteckningar, research och uppgifter sida vid sida."
+    ]
+  },
+  "ai": {
+    "label": "AI",
+    "title": "AI som respekterar ditt tänkande.",
+    "description": "Reflect levereras med inbyggd AI som förstår din graf. Sammanfatta anteckningar, ställ frågor eller skapa outlines utan att byta verktyg.",
+    "bullets": [
+      "Ställ naturliga frågor om dina anteckningar.",
+      "Sammanfattningar, omformuleringar och skrivhjälp i farten.",
+      "Integritet först: din data stannar hos dig."
+    ]
+  },
+  "pricing": {
+    "title": "Enkel prissättning för fokuserade team och individer.",
+    "blurb": "Prova allt gratis i 14 dagar. Avsluta när som helst, exportera när som helst.",
+    "price": "$10",
+    "period": "per månad",
+    "features": [
+      "Obegränsade anteckningar, länkar och uppladdningar",
+      "Inbyggd AI-assistans",
+      "Dagliga anteckningar och grafvy",
+      "Säker synk på alla enheter",
+      "Publicera och dela sidor",
+      "Prestandapanel"
+    ],
+    "cta": "Starta gratis provperiod",
+    "secondaryCta": "Boka en demo"
+  },
+  "footer": {
+    "product": "Produkt",
+    "company": "Företag",
+    "resources": "Resurser",
+    "links": {
+      "features": "Funktioner",
+      "ai": "AI",
+      "pricing": "Priser",
+      "downloads": "Nedladdningar",
+      "blog": "Blogg",
+      "changelog": "Ändringslogg",
+      "careers": "Karriär",
+      "contact": "Kontakt",
+      "docs": "Dokumentation",
+      "roadmap": "Roadmap",
+      "values": "Våra värderingar"
+    }
+  }
+}
